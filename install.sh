@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Ganti dengan URL repo GitHub kamu
-BASE_URL="https://raw.githubusercontent.com/komunitas/installer/main"
+# URL repo GitHub kamu
+BASE_URL="https://raw.githubusercontent.com/Kresa12/plugintools/main"
 
 echo "======================================="
 echo "   Setup Environment Komunitas Squad   "
@@ -12,7 +12,8 @@ echo "2) Laravel Backend"
 echo "3) Keluar"
 echo "======================================="
 
-read -p "Masukkan pilihan (1/2/3): " choice
+# Pakai /dev/tty supaya bisa input walau dijalankan via pipe
+read -p "Masukkan pilihan (1/2/3): " choice </dev/tty
 
 case $choice in
   1)
@@ -31,4 +32,3 @@ case $choice in
     echo "Pilihan tidak valid!"
     ;;
 esac
-
