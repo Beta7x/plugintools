@@ -4,11 +4,11 @@
 BASE_URL="https://raw.githubusercontent.com/Kresa12/plugintools/main"
 
 echo "======================================="
-echo "   Setup Environment Komunitas Squad   "
+echo "   Setup Environment Plugin   "
 echo "======================================="
 echo "Pilih environment yang ingin diinstall:"
 echo "1) Mobile Kotlin"
-echo "2) Laravel Backend"
+echo "2) Mobile Flutter"
 echo "3) Keluar"
 echo "======================================="
 
@@ -21,14 +21,14 @@ case $choice in
     curl -s $BASE_URL/mobile-kotlin.sh | bash
     ;;
   2)
-    echo ">> Download & jalankan installer Laravel Backend..."
-    curl -s $BASE_URL/laravel.sh | bash
+    echo ">> Download & jalankan installer Mobile Flutter..."
+    curl -s $BASE_URL/mobile-flutter.sh | bash
     ;;
   3)
     echo "Keluar."
     exit 0
     ;;
   *)
-    echo "Pilihan tidak valid!"
+    echo "Pilihan tidak valid"
     ;;
 esac
