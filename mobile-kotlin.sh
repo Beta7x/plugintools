@@ -5,7 +5,7 @@ echo "======================================="
 
 # Update repo & install dependencies
 sudo apt-get update -y && sudo apt-get upgrade -y
-sudo apt-get install -y curl unzip tar libglu1-mesa
+sudo apt-get install -y curl git unzip tar libglu1-mesa
 
 # Download Android Studio
 echo ">> Download Android Studio..."
