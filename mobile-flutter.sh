@@ -19,7 +19,7 @@ if [ -d "$HOME/flutter" ]; then
 fi
 
 cd $HOME
-curl -O https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.25.4-stable.tar.xz
+curl -O https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.35.4-stable.tar.xz
 tar xf flutter_linux_3.35.4-stable.tar.xz
 rm flutter_linux_3.35.4-stable.tar.xz
 
