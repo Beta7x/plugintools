@@ -9,11 +9,12 @@ echo "======================================="
 echo "Pilih environment yang ingin diinstall:"
 echo "1) Mobile Kotlin"
 echo "2) Mobile Flutter"
-echo "3) Keluar"
+echo "3) Frontend React"
+echo "4) Keluar"
 echo "======================================="
 
 # Pakai /dev/tty supaya bisa input walau dijalankan via pipe
-read -p "Masukkan pilihan (1/2/3): " choice </dev/tty
+read -p "Masukkan pilihan (1/2/3/4): " choice </dev/tty
 
 case $choice in
   1)
@@ -25,10 +26,14 @@ case $choice in
     curl -s $BASE_URL/mobile-flutter.sh | bash
     ;;
   3)
+    echo ">> Download & jalankan installer Frontend React..."
+    curl -s $BASE_URL/frontend-react.sh | bash
+    ;;
+  4)
     echo "Keluar."
     exit 0
     ;;
   *)
-    echo "Pilihan tidak valid"
+    echo "Pilihan tidak valid!"
     ;;
 esac
