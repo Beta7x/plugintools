@@ -23,16 +23,13 @@ npm -v
 # ---------------------------
 # Install XAMPP
 # ---------------------------
-echo ">> Mengunduh dan menginstall XAMPP..."
-cd /tmp
-wget https://www.apachefriends.org/xampp-files/8.2.12/xampp-linux-x64-8.2.12-0-installer.run
-chmod +x xampp-linux-x64-8.2.12-0-installer.run
-sudo ./xampp-linux-x64-8.2.12-0-installer.run --mode unattended
-rm xampp-linux-x64-8.2.12-0-installer.run
 
-# Start service Apache & MySQL
-echo ">> Menjalankan Apache & MySQL..."
-sudo /opt/lampp/lampp start
+echo ">> Download XAMPP..."
+cd $HOME
+wget https://sourceforge.net/projects/xampp/files/XAMPP%20Linux/8.2.12/xampp-linux-x64-8.2.12-0-installer.run
+chmod +x xampp-linux-x64-8.2.12-0-installer.run
+sudo ./xampp-linux-x64-8.2.12-0-installer.run
+echo ">> XAMPP terinstal. Jalankan dengan: sudo /opt/lampp/manager-linux-x64.run"
 
 # ---------------------------
 # Install VS Code
