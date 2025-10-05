@@ -17,7 +17,7 @@ echo "7) Keluar"
 echo "======================================="
 
 # Pakai /dev/tty supaya bisa input walau dijalankan via pipe
-read -p "Masukkan pilihan (1/2/3/4/5/6): " choice </dev/tty
+read -p "Masukkan pilihan (1/2/3/4/5/6/7): " choice </dev/tty
 
 case $choice in
   1)
